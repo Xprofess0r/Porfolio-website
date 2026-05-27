@@ -1,0 +1,208 @@
+{
+  "data": [
+    {
+      "id": "R_geology_gpt",
+      "name": "GeologyGPT – Agentic RAG Assistant",
+      "createdAt": "2025-03-15T10:00:00Z",
+      "url": "https://github.com/Xprofess0r/AgenticGeologyGPT",
+      "description": "Built an Agentic RAG system using LangGraph (FastAPI) and Node.js, integrating Pinecone, Tavily, and Gemini for geology-focused responses. Developed a retrieval pipeline with PDF ingestion, chunking, embeddings, and vector indexing, improving search accuracy through query optimization and reranking. Implemented a domain guard using embedding similarity and multi-signal validation (RAG + Web) to reduce hallucinations and ensure domain-specific responses.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi",
+          "color": "#009688"
+        },
+        {
+          "name": "LangGraph",
+          "iconifyClass": "simple-icons:graphql"
+        },
+        {
+          "name": "Pinecone",
+          "iconifyClass": "simple-icons:pinecone",
+          "color": "#14B8A6"
+        },
+        {
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs"
+        }
+      ]
+    },
+    {
+      "id": "R_airline_booking_system",
+      "name": "Microservice-Driven Airline Booking & Flight Search System",
+      "createdAt": "2025-09-05T10:00:00Z",
+      "url": "https://github.com/Xprofess0r/Booking-system",
+      "description": "Architected a scalable, microservice-based airline reservation system separating flight discovery from transactional booking workflows. Developed a high-performance Flight Search Service optimized for low-latency querying, multi-city routing, and real-time inventory checks. Implemented the Booking Service with distributed transactions, robust concurrency controls to prevent double-booking, and automated ticket generation workflows.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs"
+        },
+        {
+          "name": "Express.js",
+          "iconifyClass": "simple-icons:express"
+        },
+        {
+          "name": "PostgreSQL",
+          "iconifyClass": "logos-postgresql"
+        },
+        {
+          "name": "Redis",
+          "iconifyClass": "logos-redis"
+        },
+        {
+          "name": "RabbitMQ",
+          "iconifyClass": "logos-rabbitmq-icon"
+        }
+      ]
+    },
+    {
+      "id": "R_multi_objective_recommendation",
+      "name": "Multi-Objective Personalized Recommendation System",
+      "createdAt": "2025-11-12T10:00:00Z",
+      "url": "https://github.com/Xprofess0r/Multi-Objective-Recommendation-system",
+      "description": "Designed and implemented a recommendation engine engineered to balance competing engagement metrics like click-through rate (CTR), conversion rate (CVR), and user diversity. Built a two-stage pipeline consisting of deep-learning-based candidate generation (retrieval) followed by a multi-gate mixture-of-experts (MMoE) ranking model. Utilized Pareto optimization algorithms to dynamically adjust objective weights based on real-time business constraints.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "TensorFlow",
+          "iconifyClass": "logos-tensorflow"
+        },
+        {
+          "name": "Scikit-learn",
+          "iconifyClass": "simple-icons:scikitlearn",
+          "color": "#F7931E"
+        },
+        {
+          "name": "Pandas",
+          "iconifyClass": "logos-pandas"
+        }
+      ]
+    },
+    {
+      "id": "R_adobe_doc_intelligence",
+      "name": "Persona-Driven Document Intelligence System",
+      "createdAt": "2025-07-20T10:00:00Z",
+      "url": "https://github.com/Dsanshy5/Adode-Round1.B.git",
+      "description": "Built a persona-driven document intelligence system for Adobe Hackathon, leveraging semantic embeddings and NLP-based relevance ranking to analyze PDF collections. Implemented heading-aware parsing, section extraction, and semantic similarity search to retrieve and prioritize contextually relevant information based on user intent and job-to-be-done tasks.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "NLP",
+          "iconifyClass": "simple-icons:spacy",
+          "color": "#09A3D5"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "logos-docker-icon"
+        },
+        {
+          "name": "Sentence Transformers",
+          "iconifyClass": "simple-icons:huggingface",
+          "color": "#FFD21E"
+        }
+      ]
+    },
+    {
+      "id": "R_ride_fare_dashboard",
+      "name": "Ride Fare Surge Analytics Dashboard",
+      "createdAt": "2026-03-28T10:00:00Z",
+      "url": "https://ride-dashboard-new.vercel.app/",
+      "description": "Developed an end-to-end data analytics project analyzing 190K+ ride records to uncover surge pricing patterns, demand trends, and geographic hotspots. Built an interactive React dashboard with real-time filtering, geospatial visualization, and multiple charts. Integrated a logistic regression model to predict surge pricing probability based on temporal and trip features.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "Recharts",
+          "iconifyClass": "simple-icons:recharts"
+        },
+        {
+          "name": "Leaflet",
+          "iconifyClass": "simple-icons:leaflet",
+          "color": "#199900"
+        },
+        {
+          "name": "Scikit-learn",
+          "iconifyClass": "simple-icons:scikitlearn",
+          "color": "#F7931E"
+        }
+      ]
+    },
+    {
+      "id": "R_retail_sales_intelligence",
+      "name": "Retail Sales Intelligence & Demand Forecasting System",
+      "createdAt": "2025-03-10T10:00:00Z",
+      "url": "https://github.com/Xprofess0r/Retail-Sales-Intelligence-Demand-Forecasting-System",
+      "description": "Built an end-to-end retail analytics pipeline using SQL and Python for data cleaning, transformation, and trend analysis. Performed demand forecasting to identify seasonal sales patterns, optimize inventory allocation, and reduce stockout risks. Developed interactive Power BI dashboards visualizing KPIs including revenue growth, product demand distribution, and regional performance insights.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "SQL",
+          "iconifyClass": "simple-icons:mysql",
+          "color": "#00758F"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Power BI",
+          "iconifyClass": "simple-icons:powerbi",
+          "color": "#F2C811"
+        }
+      ]
+    },
+    {
+      "id": "R_ai_blog_platform",
+      "name": "AI Blog Platform",
+      "createdAt": "2024-11-15T10:00:00Z",
+      "url": "https://github.com/DevLaunch-tech/AiBlogSite.github",
+      "description": "Developed a full-stack AI-powered blog platform enabling users to generate blogs, upload images, and publish content with secure authentication. Integrated AI-based content generation and built a scalable backend with seamless user experience.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "React",
+          "iconifyClass": "logos-react"
+        },
+        {
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs"
+        },
+        {
+          "name": "MongoDB",
+          "iconifyClass": "simple-icons:mongodb",
+          "color": "#4DB33D"
+        },
+        {
+          "name": "AI Integration",
+          "iconifyClass": "simple-icons:openai"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+.experience-accord {
+  margin: 50px;
+}
+
+.accord-panel {
+  font-family: "Google Sans Regular";
+}
+
+/* Force accordion header text to be visible in dark mode */
+.experience-accord [role="button"],
+.experience-accord [data-baseweb="accordion"] button,
+.experience-accord li > div:first-child,
+.accord-panel > div > div {
+  color: inherit !important;
+  background-color: inherit !important;
+}
+
+/* Target BaseUI accordion title text */
+[data-baseweb="accordion"] [role="button"] div,
+[data-baseweb="accordion"] [role="button"] span {
+  color: inherit !important;
+}
+
+@media (max-width: 768px) {
+  .experience-accord {
+    margin: 20px;
+  }
+}

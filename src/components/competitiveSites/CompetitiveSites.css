@@ -1,0 +1,39 @@
+.competitive-sites-main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin: 16px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.competitive-sites-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-family: "Google Sans Regular";
+  transition: transform 0.25s ease;
+}
+
+.competitive-sites-inline:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.competitive-sites-inline a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

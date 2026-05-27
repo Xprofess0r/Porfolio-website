@@ -1,0 +1,181 @@
+.greet-main {
+  width: 90%;
+  padding: 30px 10px 20px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated gradient blobs - subtle in light mode */
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  animation: blobFloat 8s ease-in-out infinite;
+}
+
+.hero-blob-1 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #A6E1FA, #0E6BA855);
+  top: -100px; right: -80px;
+}
+
+.hero-blob-2 {
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, #0E6BA844, transparent);
+  bottom: 0; left: -50px;
+  animation-delay: -4s;
+}
+
+/* Dark mode blobs - more vibrant */
+.greet-dark .hero-blob-1 {
+  background: radial-gradient(circle, #6c63ff55, #6c63ff22);
+  opacity: 0.6;
+}
+.greet-dark .hero-blob-2 {
+  background: radial-gradient(circle, #a89cff33, transparent);
+  opacity: 0.5;
+}
+
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, -15px) scale(1.05); }
+  66% { transform: translate(-10px, 10px) scale(0.98); }
+}
+
+.greeting-main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+/* Badge */
+.greeting-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-family: "Google Sans Regular";
+  letter-spacing: 0.5px;
+  border: 1.5px solid;
+  border-radius: 100px;
+  padding: 5px 14px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  animation: fadeUp 0.6s ease both;
+}
+
+.badge-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.greeting-text {
+  margin-top: 8px;
+  font-size: 70px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+  animation: fadeUp 0.7s ease 0.1s both;
+}
+
+.greeting-name-highlight {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.greeting-name-highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: currentColor;
+  opacity: 0.2;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: underlineIn 0.8s ease 0.8s forwards;
+}
+
+@keyframes underlineIn {
+  to { transform: scaleX(1); }
+}
+
+.greeting-nickname {
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: "Google Sans Bold Italic";
+  margin-top: 4px;
+  animation: fadeUp 0.7s ease 0.2s both;
+}
+
+.greeting-text-p {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-right: 40px;
+  margin-top: 16px;
+  font-family: "Google Sans Medium";
+  min-height: 42px;
+  animation: fadeUp 0.7s ease 0.3s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.portfolio-repo-btn-div {
+  animation: fadeUp 0.7s ease 0.5s both;
+}
+
+.greeting-image-div > * {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15%;
+  animation: floatAnim 6s ease-in-out infinite;
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@media (max-width: 1380px) {
+  .greeting-text { font-size: 50px; }
+  .greeting-text-p { font-size: 20px; }
+}
+
+@media (max-width: 768px) {
+  .greet-main { margin-top: 1rem; }
+  .greeting-main { display: block; }
+  .greeting-badge { margin: 0 auto 16px; display: flex; width: fit-content; }
+  .greeting-text { font-size: 30px; margin-top: 0; text-align: center; }
+  .greeting-nickname { font-size: 22px; text-align: center; }
+  .greeting-text-p { font-size: 16px; margin-right: 0; line-height: normal; text-align: center; }
+  .greeting-image-div > * { animation: none; }
+  .portfolio-repo-btn-div { width: 100%; display: flex; justify-content: center; }
+  .hero-blob { display: none; }
+}
